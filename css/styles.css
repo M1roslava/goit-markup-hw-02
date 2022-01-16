@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@900&display=swap');
+body {
+    background-color: #ffffff;
+}
+
+.page-header {
+
+background: #FFFFFF;
+flex-wrap: nowrap;
+border-bottom:slategrey;
+display: flex;
+justify-content: space-between;
+padding-bottom: 5px;
+}
+
+.navigation {
+    display: inline-block;
+    justify-content: space-between;
+    width: 300px;
+  }
+  .link {
+    display: inline-block;
+  }
+  .header-list{
+    display: inline-block;
+    margin-left: auto;
+  }
+.logo-link {
+font-family:'Raleway', sans-serif;
+font-style: normal;
+font-weight: bold;
+font-size: 26px;
+text-decoration:none;
+line-height: 31px;
+letter-spacing: 0.03em;
+color:var(--accent-color);
+
+}
+
+.logo-link-one {
+color: #2196F3;
+text-decoration:none;
+}
+.logo-link-two {
+color:white;
+text-decoration:none;
+}
+
+.logo-link {
+color:in;
+text-decoration: underline 0,15em;
+transition: text-decoration-color 300ms;
+inherits:#ffffff;
+}
+
+.site-nav {
+color:black;
+font-family: Roboto;
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+}
+
+.link {
+font-family: Roboto;
+color:black;
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+}
+
+.link:hover {
+color:#2196F3;
+}
+
+.header-contacts {
+font-family: Roboto;
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 16px;
+letter-spacing: 0.02em;
+color: #757575;
+}
+.site-nav {
+ text-decoration:none;
+}
+.header-list {
+text-decoration:none;   
+}
+.section {
+background: #2F303A;
+align-items: center;
+text-align: center;
+}
+.title-h1 {
+font-family: 'Roboto', sans-serif;
+font-style: normal;
+font-weight: 900;
+font-size: 44px;
+line-height: 60px;
+text-align: center;
+letter-spacing: 0.06em;
+text-transform: uppercase;
+color: #FFFFFF;
+}
+
+.order-button {
+background: #2196F3;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+align-items: center;
+
+font-family: Roboto;
+font-style: normal;
+font-weight: bold;
+font-size: 16px;
+display: flex;
+align-items: center;
+text-align: center;
+letter-spacing: 0.06em;
+color: #FFFFFF;
+}
+.adventages-list{
+font-family: Roboto;
+font-style: normal;
+}
+.advantages-list {
+
+}
+.title-advantages {
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #212121;
+}
+.contect-advantages {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px; 
+    letter-spacing: 0.03em;
+    color: #757575;
+    
+}
+.section-three {
+background: #F5F4FA;
+}
+
+
+.heroes {
+font-family: Roboto;
+font-style: normal;
+font-weight: bold;
+font-size: 36px;
+line-height: 42px;
+text-align: center;
+letter-spacing: 0.03em;
+}
+
+.page-footer{
+background: #2F303A;
+}
+.logo-footer{
+font-family: Raleway;
+font-style: normal;
+font-weight: bold;
+color:white;
+font-size: 26px;
+line-height: 31px;
+}
+.logo-link-three {
+color: #2196F3;
+}
+.logo-link-four {
+color:black;
+text-decoration: none;
+}
+
+.adress-footer {
+color: #FFFFFF;
+font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 24px;
+decoration:none;
+}
+.contacts-footer {
+color: rgba(255, 255, 255, 0.6);
+font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 24px;
+}
