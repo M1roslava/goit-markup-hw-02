@@ -1,57 +1,93 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap');
+
+/* Палитра цветов 
+цвет телефона и почты #757575 
+цвет акцента  в навигации #2196F3 
+цвет кнопки #2196F3
+цветк акцент на кнопке #188CE8 
+цвет заголовков #212121
+основной цвет текста  #757575
+текст в секции 1 #FFFFFF
+основной цвет фона #FFFFFF
+цвет подвала #2F303A
+цвет секции #F5F4FA
+
+цвет кнопок в Портфолио  #F5F4FA
+*/
+:root {
+--primary-accent-color: #2196F3;
+--main-text-color: #757575;
+--secondary-accent-color: #188CE8;
+--main-bcg-color: #FFFFFF;
+--secondary-bcg-color: #F5F4FA;
+--footer-color: #2F303A;
+--h-text-color:#212121;
+}
+ /* Глобальные характеристики */
+
 body {
-    background-color: #ffffff;
+    background-color:var(--main-bcg-color);
     font-family: Roboto;
 }
 a {
   text-decoration: none;
 }
 
+a .site-nav,
+a .contacts-footer {
+  text-decoration: none;
+}
+
+/* Общий CSS для Студии и Портфолио */
+/* Header */
+
 .page-header {
 
-background: #FFFFFF;
+background: var(--main-bcg-color);
 flex-wrap: nowrap;
-border-bottom:slategrey;
+/* линия для портфолио в хэдере 
+border-bottom:slategrey;*/
+
 display: flex;
 justify-content: space-between;
 padding-bottom: 5px;
 border-bottom: 1px solid #ECECEC;
 }
+/* Логотип */
 .logo-link {
-  text-decoration: underline;
-  color: #2196F3;
+  color:var(--primary-accent-color);
 }
 .logo-link-one, 
 .logo-link-two:hover {
   text-decoration: underline;
-  color: #2196F3;
+  color:var(--primary-accent-color);
 }
 .logo-link-one, 
 .logo-link-two:focus {
-  text-decoration: underline #2196F3;
+  text-decoration: var(--primary-accent-color);
 }
+/* Навигация меню */
 .navigation {
     display: flex;
     justify-content: space-between;
     text-decoration:none;
-    color: #212121;
+    color:var(--h-text-color);
     justify-content: end;
   }
   .link {
     display: inline-block;
     text-decoration:none;
-    color: #212121;
+    color: var(--h-text-color);
     padding: auto;
   }
-  .link-current {
+  .current {
   display: inline-block;
-  text-decoration:none;
-  color: #2196F3;
+  color:var(--primary-accent-color);
   }
   .link:hover,
   .link:focus {
-    text-decoration: underline;
-    color: #2196F3;
+    /* text-decoration: underline;  исправление дз*/
+    color: var(--primary-accent-color);
   }
   .header-list{
     display: inline-block;
@@ -67,27 +103,26 @@ line-height: 31px;
 letter-spacing: 0.03em;
 color:var(--accent-color);
  }
-    
-.logo-link-one {
- color: #2196F3;
- text-decoration:none;
+
+.page-header .logo-link-one {
+ color: var(--primary-accent-color);
+ /* text-decoration:none; */
  }
-.logo-link-two {
-color:white;
-text-decoration:none;
+.page-header .logo-link-two {
+color:var(--main-bcg-color);
+/* text-decoration:none; */
  }
     
- .logo-link:hover {
-color:in;
-text-decoration: underline 0,15em;
+.page-header .logo-link:hover {
+text-decoration: underline 0,15em var(--primary-accent-color);
 transition: text-decoration-color 300ms;
-inherits:#ffffff;
+/* inherits:#ffffff; */
  }
-.logo-link-one
-.logo-link-two:hover {
-text-decoration: underline 0,15em;
-text-decoration-color:#2196F3; ;
+.page-header .logo-link-one
+.page-header .logo-link-two:hover {
+text-decoration: underline 0,15em var(--primary-accent-color);
 }
+
 .site-nav {
 color:black;
 font-family: Roboto;
@@ -99,6 +134,7 @@ list-style-type: none;
 flex-wrap: nowrap;
 display: flex;
 justify-content: space-between;
+text-decoration:none;
 }
 
 .site-nav:hover {
@@ -109,6 +145,8 @@ justify-content: space-between;
   color:#2196F3;
 }
 
+
+
 .header-contacts {
 font-family: Roboto;
 font-style: normal;
@@ -118,9 +156,7 @@ line-height: 16px;
 letter-spacing: 0.02em;
 color: #757575;
 }
-.site-nav {
- text-decoration:none;
-}
+
 
 .header-list {
 text-decoration:none;   
@@ -167,10 +203,12 @@ text-decoration: underline #2196F3;
 color: #FFFFFF;
 background-color: #188CE8;
 }
-.advantages {
+
+/* Убираю маркеры li */
+.list {
   list-style-type: none;
 }
-.adventages-list{
+.adventages-list.list {
 font-family: Roboto;
 font-style: normal;
 list-style-type: none;
@@ -178,7 +216,7 @@ list-style-type: none;
 .title-hidden {
   font-size: 0px;
 }
-.tasks-list {
+.list{
   list-style-type: none;
 }
 .title-advantages {
