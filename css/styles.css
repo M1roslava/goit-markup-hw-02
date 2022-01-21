@@ -39,19 +39,24 @@ a .site-nav,
 a .contacts-footer {
   text-decoration: none;
 }
-
+.container {
+width: 1200px;
+padding-left: 15px;
+padding-right: 15px;
+margin:0 auto;
+}
 /* Общий CSS для Студии и Портфолио */
 /* Header */
 
 .page-header {
-
 background: var(--main-bcg-color);
-flex-wrap: nowrap;
+/* flex-wrap: nowrap; */
 /* линия для портфолио в хэдере 
 border-bottom:slategrey;*/
-
+padding-top: 24px;
 display: flex;
-justify-content: space-between;
+align-items: center;
+/* justify-content: space-between; */
 padding-bottom: 5px;
 border-bottom: 1px solid #ECECEC;
 }
@@ -71,17 +76,28 @@ border-bottom: 1px solid #ECECEC;
 /* Навигация меню */
 .navigation {
     display: flex;
-    justify-content: space-between;
+    align-items: center;
+    /* justify-content: space-between; */
     text-decoration:none;
     color:var(--h-text-color);
-    justify-content: end;
+    /* justify-content: end; */
   }
+ 
+  /* дополнительный класс для контейнера с польз.настройками */
+ .user {
+   display: flex;
+   align-items: center;
+ }
   .link {
-    display: inline-block;
+    /* display: inline-block; */
     text-decoration:none;
     color: var(--h-text-color);
     padding: auto;
-  }
+    }
+
+   .link+.link {
+   margin-left: 48px;
+    }
   .current {
   display: inline-block;
   color:var(--primary-accent-color);
@@ -91,11 +107,10 @@ border-bottom: 1px solid #ECECEC;
     /* text-decoration: underline;  исправление дз*/
     color: var(--primary-accent-color);
   }
-  .header-list{
-    display: inline-block;
-    margin-left: auto;
-  }
+
   .logo-link {
+display: block;
+margin-right: 93px;
 font-family:'Raleway', sans-serif;
 font-style: normal;
 font-weight: 700;
@@ -104,38 +119,40 @@ text-decoration:none;
 line-height: 1.19;
 letter-spacing: 0.03em;
 /* line-height 31/26=1.19 */
-color:var(--accent-color);
+color:black;
  }
 
 .page-header .logo-link-one {
- color: var(--primary-accent-color);
+ color:var(--primary-accent-color);
  /* text-decoration:none; */
  }
-.page-header .logo-link-two {
-color:var(--main-bcg-color);
-/* text-decoration:none; */
- }
-    
+
 .site-nav {
 color:black;
 font-weight: 500;
 font-size: 14px;
 line-height: 1.14;
-/* 16/14=1,14 */
+/* 16/14=1.14 */
 letter-spacing: 0.02em;
 text-decoration: none;
 list-style-type: none;
-flex-wrap: nowrap;
+/* flex-wrap: nowrap; */
 display: flex;
-justify-content: space-between;
+/* justify-content: space-between; */
 }
 
 .site-nav:hover {
-  color:#2196F3;
+  color:var(--primary-accent-color);
 }
 
 .site-nav:focus {
-  color:#2196F3;
+  color:var(--primary-accent-color);
+}
+
+.connect {
+  display: flex;
+  margin-left: auto;
+  align-items: center;
 }
 
 .header-contacts {
@@ -143,11 +160,12 @@ font-weight: 500;
 font-size: 14px;
 line-height: 1.14;
 letter-spacing: 0.02em;
-color: #757575;
+color: var(--main-text-color);
 }
 
 .header-list {
 text-decoration:none;   
+display: flex;
 }
 .solutions {
 background: #2F303A;
